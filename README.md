@@ -27,3 +27,24 @@ I decided to use scikit-learn's Random Forest classifier since it is not limited
 I used 5-fold cross validation to evaluate model performance and used accuracy and AUC (area under the ROC curve) as performance metrics. The average accuracy over the 5 folds was 82% and the average AUC was 0.89. I was actually pretty impressed with the performance, given that I excluded data related to reviews and used the default hyperparameter settings. Below is a plot showing predictors ranked by their importance.
 
 ![Top RF features](Figures/RF_top_features.png)
+
+### Competitive Edge Takeaways
+Looking at the top predictors, I think there is some good insight to gain a competitive edge. I will focus on things that are directly in the host's control since obviously not everything is. For example, you  can't control how large the home is or where it's located; unless you happen to have the money laying around to buy another house to list. Then good for you! 
+
+I will focus on 6 of the top 8 predictors for Superhost status. 
+
+1. Host acceptance rate
+2. Number of amenities offered
+3. Host response rate
+4. Neighborhood description
+5. Listing description
+6. Listing price
+
+![Top Features by Superhost Status](Figures/top_predictors_by_superhost.png)
+
+The takeaways here are quite simple: 
+1. Communicate well by actually responding to your potential guests when they request a reservation or have questions. And respond quickly (response time within an hour is also highly ranked). 
+2. Take the time to list all amenities your home has to offer, even if they seem like a given. Not every amenity is reasonably within your control but consider adding some extras if you can (e.g., Netflix, Hulu, other entertainment).
+3. Always accept the reservation if possible! I realize this is not always in your control and some wisdom should be applied here (e.g., don't accept someone with bad reviews). But don't let laziness or slight inconveniences be the reason your acceptance rate drops.
+4. Take the time to paint your home and neighborhood in the best light possible. Describe what you love about the home and the part of town it's located. Mention the good restaurants or bars nearby. Give the extra insight only a local can provide. 
+5. Price your listing competitively. The price distributions for the various ZIP codes should be useful here. If you're pricing significantly higher than the median in your area, then you should have a good reason for it.
