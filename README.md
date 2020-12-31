@@ -17,3 +17,13 @@ I downloaded the data from [Inside Airbnb](http://insideairbnb.com/get-the-data.
 4. Seaborn
 5. Scikit-learn
 6. NLTK
+7. datetime
+8. ast
+
+### Random Forest Classification
+I decided to use scikit-learn's Random Forest classifier since it is not limited to forming a linear decision boundary and has some nice properties that combat overfitting. It also has a built in feature importance ranking, which is useful for our purposes. I excluded all predictors related to customer reviews since we already know that is so deeply tied to Superhost status. So without further ado, let's see how we performed and which predictors are most important!
+
+### Performance and Top Predictors
+I used 5-fold cross validation to evaluate model performance and used accuracy and AUC (area under the ROC curve) as performance metrics. The average accuracy over the 5 folds was 82% and the average AUC was 0.89. I was actually pretty impressed with the performance, given that I excluded data related to reviews and used the default hyperparameter settings. Below is a plot showing predictors ranked by their importance.
+
+![Top RF features](Figures/RF_top_features.png)
