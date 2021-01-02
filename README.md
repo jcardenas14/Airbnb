@@ -29,9 +29,9 @@ I used 5-fold cross validation to evaluate model performance and used accuracy a
 ![Top RF features](Figures/RF_top_features.png)
 
 ### Competitive Edge Takeaways
-Looking at the top predictors, I think there is some good insight to gain a competitive edge. I will focus on things that are directly in the host's control since obviously not everything is. For example, you  can't control how large the home is or where it's located; unless you happen to have the money laying around to buy another house to list. Then good for you! 
+Looking at the top predictors, I think there is some valuable insight to gain a competitive edge. I will focus on things that are directly in the host's control since obviously not everything is. For example, you can't control how large the home is or where it's located - unless you happen to have the money laying around to buy another house to list. Then good for you! 
 
-I will focus on 6 of the top 8 predictors for Superhost status. 
+Below I show average measures for 6 of the top 8 predictors, grouped by Superhost status.
 
 1. Host acceptance rate
 2. Number of amenities offered
